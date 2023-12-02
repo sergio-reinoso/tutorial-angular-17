@@ -6,9 +6,11 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `<h1>Hola mundo desde {{city.toUpperCase()}} {{1 + 1}} </h1>`,
+  styles: `
+    
+  `
 })
 export class AppComponent {
-  title = 'angular-17-app';
+  city = 'Bogotá D.C';
 }
